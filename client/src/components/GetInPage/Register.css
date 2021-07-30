@@ -1,0 +1,11 @@
+.signup{
+    max-width: 500px; 
+}
+
+.signup-card-body{
+    padding: 20px 70px;
+}
+
+.signup-submit-button{
+    max-width: 40%;
+}
