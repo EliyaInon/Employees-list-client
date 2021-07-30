@@ -1,0 +1,30 @@
+.employees-list-frame{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+}
+.add-employees-button{
+    position: absolute;
+    right: 30px;
+    margin-top: 7px;
+}
+.change-mode-button{
+    position: absolute;
+    left: 10px;
+    margin-top: -70px;
+}
+.change-mode-button:focus{
+    box-shadow: none;
+}
+.button-logout{
+    position:fixed;
+    padding: 0;
+    margin: 10px 110px;
+    top:0;
+    left:0;
+    
+    width: 80px;
+    height: 35px;
+}

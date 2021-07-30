@@ -1,0 +1,12 @@
+.emp-picture{
+    border-radius: 100%;
+    background-color: yellowgreen;
+    height: 45px;
+    width: 45px;
+}
+.td-feild{
+    min-width: 140px;
+}
+.row-icon{
+    cursor: pointer;
+}
