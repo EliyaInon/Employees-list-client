@@ -4,6 +4,7 @@ import { useHistory } from 'react-router'
 import reactUseCookie from 'react-use-cookie'
 import { APP_PATH, LOGIN_PATH } from '../App'
 import { UserData } from '../Models/Users'
+import { getAxios } from './Axios'
 
 interface ContextValue {
     user?: UserData,
@@ -33,9 +34,7 @@ export const AuthProvider = (props: { children: any }) => {
 
     const history = useHistory();
 
-    const axiosInstance = axios.create({
-        baseURL: "https://localhost:44311/Authentication",
-    })
+    const axiosInstance = getAxios("Authentication")
 
     const signup = async (user: UserData, password: string) => {
         try {

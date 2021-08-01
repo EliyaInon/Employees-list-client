@@ -2,11 +2,10 @@ import axios from 'axios'
 import { Dispatch } from "@reduxjs/toolkit"
 import { AddEmployee, EditEmployee, GetEmployees, RemoveEmployeeById } from "../redux/actions"
 import { EmployeeData, EmployeeDataDto } from "../Models/Employee"
+import { getAxios } from './Axios'
 import { useHistory } from 'react-router'
 
-const axiosInstance = axios.create({
-    baseURL: "https://localhost:44311/employees",
-})
+const axiosInstance = getAxios("employees")
 
 export const GetAll_Employees = async (dispatch: Dispatch, token: string, handelError: () => void) => {
     try {
@@ -26,7 +25,7 @@ export const AddNew_Employee = async (dispatch: Dispatch, newEmployee: EmployeeD
         dispatch(AddEmployee(data))
     } catch {
         console.log("client: Erorr in adding employee");
-        
+
         handelError()
     }
 }
