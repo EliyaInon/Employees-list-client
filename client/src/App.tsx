@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { EmployeesList } from './components/MainPage/EmployeesList';
-import { LogIn } from './components/GetInPage/LogIn';
-import { Register } from './components/GetInPage/Register';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { AuthProvider } from './Services/Authentication';
+import { LogIn } from './components/LandingPage/LogIn';
+import { Register } from './components/LandingPage/Register';
 
 export const LOGIN_PATH: string = "/login"
 export const REGISTER_PATH: string = "/signup"

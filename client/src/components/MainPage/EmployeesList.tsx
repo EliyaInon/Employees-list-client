@@ -42,7 +42,9 @@ export const EmployeesList = () => {
     const history = useHistory()
 
     const { logout } = useAuth()
+    //#endregion
 
+    //#region Effects
     useEffect(() => {
         if (token === "") {
             logout()
@@ -106,13 +108,13 @@ export const EmployeesList = () => {
                                 <tr>
                                     <th></th>
                                     <th>
-                                        First_Name
+                                        First Name
                                     </th>
                                     <th>
-                                        Last_Name
+                                        Last Name
                                     </th>
                                     <th>
-                                        Phone_142141r124
+                                        Phone
                                     </th>
                                     <th>
                                         Address
